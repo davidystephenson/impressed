@@ -1,0 +1,63 @@
+{
+  "name": "impressed",
+  "version": "0.1.0",
+  "description": "A Chakra UI Button that shares errors with a Popover",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "npx tsup",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "library",
+    "chakra-ui",
+    "frontend"
+  ],
+  "author": {
+    "name": "David Y. Stephenson",
+    "email": "david@davidystephenson.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidystephenson/impressed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidystephenson/impressed/issues"
+  },
+  "homepage": "https://github.com/davidystephenson/impressed#readme",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.7",
+    "context-creator": "^0.1.23",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "ts-standard": "^12.0.2",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.1"
+  }
+}
