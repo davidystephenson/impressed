@@ -38,8 +38,8 @@
   },
   "homepage": "https://github.com/davidystephenson/impressed#readme",
   "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.10.7",
