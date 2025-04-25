@@ -12,6 +12,22 @@ function UnforwardedIconButton (props: IconButtonProps): JSX.Element {
   return <IconButton {...props} />
 }
 
+function UiButton(props: ButtonProps) {
+  return (
+    <Button variant='ghost' colorScheme='teal' size='lg' {...props}>
+      {props.children}
+    </Button>
+  )
+}
+
+function UiIconButton(props: IconButtonProps) {
+  return (
+    <IconButton variant='ghost' colorScheme='teal' size='lg' {...props}>
+      {props.children}
+    </IconButton>
+  )
+}
+
 export default function App() {
   const [error, setError] = useState<ReactNode>()
   const [iconError, setIconError] = useState<ReactNode>()
@@ -23,6 +39,23 @@ export default function App() {
   }
   return (
     <ChakraProvider>
+      <div>
+        <UiButton onClick={handleClick}>
+          Click Me
+        </UiButton>
+      </div>
+      <div>
+        <Impressed onClick={handleClick} error={error} View={UiButton} IconView={UiIconButton}>
+          Click Me
+        </Impressed>
+      </div>
+      <div>
+        <UiIconButton onClick={handleClick} aria-label="Icon Button" icon={<MdQuestionMark />} />
+      </div>
+      <div>
+        <IconImpressed onClick={handleClick} error={error} IconView={UiIconButton} aria-label="Icon Button" icon={<MdQuestionMark />} />
+      </div>
+
       <div>
         <Impressed onClick={handleClick} error={error}>
           Click Me

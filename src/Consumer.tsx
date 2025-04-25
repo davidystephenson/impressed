@@ -44,10 +44,11 @@ function View (
   }
   const icon = <MdError />
   const sizeProps = props.size == null ? {} : { size: props.size }
+  const IconView = button.IconView ?? IconButton
   return (
     <ButtonGroup isAttached orientation={button.orientation}>
       {button.leftButtons}
-      <Button
+      <View
         onClick={button.handleClick}
         isLoading={button.loading}
         type={button.type}
@@ -57,7 +58,7 @@ function View (
       />
       <Popover>
         <PopoverTrigger>
-          <IconButton
+          <IconView
             aria-label='Error'
             colorScheme='red'
             icon={icon}

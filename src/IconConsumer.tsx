@@ -12,9 +12,10 @@ function Consumer (
   ref: ForwardedRef<HTMLButtonElement>
 ): JSX.Element {
   const button = impressedContext.use()
+  const IconView = button.IconView ?? IconButton
   if (button.error == null) {
     const main = (
-      <IconButton
+      <IconView
         variant='ghost'
         isLoading={button.loading}
         onClick={button.handleClick}
@@ -37,7 +38,7 @@ function Consumer (
   return (
     <ButtonGroup isAttached orientation={button.orientation}>
       {button.leftButtons}
-      <IconButton
+      <IconView
         onClick={button.handleClick}
         isLoading={button.loading}
         ref={ref}
@@ -47,7 +48,7 @@ function Consumer (
       />
       <Popover>
         <PopoverTrigger>
-          <IconButton
+          <IconView
             aria-label='Error'
             icon={<MdError />}
             colorScheme='red'
