@@ -1,6 +1,6 @@
 {
   "name": "impressed",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Chakra UI Button with Popover error feedback",
   "type": "module",
   "main": "dist/index.js",
