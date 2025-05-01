@@ -1,7 +1,7 @@
 {
   "name": "impressed",
   "version": "0.1.2",
-  "description": "A Chakra UI Button that shares errors with a Popover",
+  "description": "A Chakra UI Button with Popover error feedback",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -18,11 +18,15 @@
   },
   "keywords": [
     "react",
+    "button",
     "components",
     "ui",
     "library",
     "chakra-ui",
-    "frontend"
+    "frontend",
+    "error",
+    "popover",
+    "feedback"
   ],
   "author": {
     "name": "David Y. Stephenson",
