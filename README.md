@@ -10,6 +10,7 @@ A Chakra UI Button with Popover error feedback
 
 ```tsx
 import { Impressed, IconImpressed } from 'impressed'
+import { ChakraProvider } from '@chakra-ui/react'
 
 export default function App() {
   const [error, setError] = useState<ReactNode>()
