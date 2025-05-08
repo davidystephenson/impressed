@@ -2,14 +2,11 @@
 
 import { forwardRef, ForwardedRef, JSX } from 'react'
 import Consumer from './Consumer'
-import { ImpressedContextValue } from './types'
-import { ButtonProps } from '@chakra-ui/react'
+import { ImpressedProps } from './types'
 import { impressedContext } from './impressedContext'
 
 function View (
-  props: {
-    leftButton?: JSX.Element
-  } & ImpressedContextValue & ButtonProps,
+  props: ImpressedProps,
   ref: ForwardedRef<HTMLButtonElement>
 ): JSX.Element {
   const {

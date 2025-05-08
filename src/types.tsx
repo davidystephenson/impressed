@@ -11,3 +11,7 @@ export interface ImpressedContextValue {
   type?: 'button' | 'submit' | 'reset'
   View?: ComponentType<ButtonProps & RefAttributes<HTMLButtonElement>>
 }
+
+export type ImpressedProps = {
+  leftButton ?: JSX.Element
+} & ImpressedContextValue & ButtonProps
