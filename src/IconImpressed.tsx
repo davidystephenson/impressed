@@ -1,13 +1,12 @@
 'use client'
 
-import { ImpressedContextValue } from './types'
-import { IconButtonProps } from '@chakra-ui/react'
+import { IconImpressedProps } from './types'
 import IconConsumer from './IconConsumer'
 import { ForwardedRef, forwardRef, JSX } from 'react'
 import { impressedContext } from './impressedContext'
 
 function View (
-  props: Omit<ImpressedContextValue, 'View'> & IconButtonProps,
+  props: IconImpressedProps,
   ref: ForwardedRef<HTMLButtonElement>
 ): JSX.Element {
   const {
